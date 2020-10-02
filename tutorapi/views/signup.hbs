@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WE YOUR PRIVATE TUTOR</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<br><br>
+<form  class="form-horizontal" action="signup" method="post">
+<fieldset  style="padding: 32px">
+
+<!-- Form Name -->
+<legend> SIGN UP</legend>
+
+<!-- Text input-->
+<div class="form-group" >
+  <div class="col-md-4" style="align:center">
+  <input  name="name" placeholder="Name" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <div class="col-md-4">
+  <input name="phone" placeholder="Phone" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+ <div class="col-md-4">
+  <input  name="email" placeholder="E-MAIL" class="form-control input-md" required="" type="text">
+    
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+ <div class="col-md-4">
+  <input  id="password"    name="password" placeholder="Password" class="form-control input-md" required="" type="password">
+   </div>
+</div>
+
+<div class="form-group">
+ <div class="col-md-4">
+  <input id="confpass" name="confpass" placeholder="Confirm Password" class="form-control input-md" required="" type="password">
+   </div>
+</div>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        var confpass = document.getElementById("confpass").value;
+        if (password != confpass) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+<!-- Button -->
+<div class="form-group">
+   <div class="col-md-4 control-label">
+    <button class="btn btn-primary" onclick="return Validate()">CREATING AN ACCOUNT</button>
+  </div>
+  </div>
+<div class="form-group">
+    <div class="form-group small clearfix"></div>
+      <span class="small clearfix" style="font-size: 13px ">   Already have an account?<a href="login">Login</a></span>
+    </div> 
+</div>
+    
+
+</fieldset>
+</form>
+ <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag --------
+ -->
+
+</body>
+</html>
